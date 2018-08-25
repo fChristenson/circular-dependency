@@ -1,9 +1,5 @@
-const { logger } = require("./");
-const config = require("../../config");
-/*
-const LogginService = require("./LoggingService");
-const logger = new LogginService(config.appName);
-*/
+const { logger } = require("../");
+
 class UserService {
   constructor(storage) {
     this.storage = storage;

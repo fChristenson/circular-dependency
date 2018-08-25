@@ -1,6 +1,6 @@
-const config = require("../../config");
-const UserService = require("./UserService");
-const LoggingService = require("./LoggingService");
+const config = require("../../config/config");
+const UserService = require("./userService/UserService");
+const LoggingService = require("./loggingService/LoggingService");
 
 // fake
 const serverStorage = {

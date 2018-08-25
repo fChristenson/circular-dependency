@@ -1,5 +1,5 @@
-const { logInfo, logDebug, logWarning, logError } = require("../utils");
-const ErrorTracking = require("../api/ErrorTracking");
+const { logInfo, logDebug, logWarning, logError } = require("../../utils");
+const ErrorTracking = require("../../api/ErrorTracking");
 
 class LoggingService {
   constructor(label) {

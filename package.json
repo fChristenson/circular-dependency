@@ -3,5 +3,8 @@
   "version": "",
   "devDependencies": {
     "webpack": "^4.17.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }

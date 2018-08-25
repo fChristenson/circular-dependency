@@ -1,4 +1,4 @@
-const { labels, mode } = require("../../config");
+const { labels, mode } = require("../../config/config");
 const either = require("./either");
 
 function logInfo(text) {

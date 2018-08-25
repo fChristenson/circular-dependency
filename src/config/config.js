@@ -1,18 +1,21 @@
-const { either } = require("./lib/utils/");
-//const either = require("./lib/utils/either");
+const { either } = require("../lib/utils");
+const appName = require("./appName");
+const { logger } = require("../lib/services");
 
 function node() {
+  logger.debug(`Running in ${process.env.NODE_ENV}`);
   return process.env.NODE_ENV;
 }
 
 function browser() {
+  logger.debug(`Running in ${__ENV__}`);
   return __ENV__;
 }
 
 const getMode = either(node, browser);
 
 module.exports = {
-  appName: "my app",
+  appName,
   mode: getMode(global && global.window),
   labels: {
     info: "INFO",
@@ -21,6 +24,6 @@ module.exports = {
     error: "ERROR"
   },
   urls: {
-    createUser: "http://localhost:3000/api/v1/users"
+    saveUser: "http://localhost:3000/api/v1/users"
   }
 };
