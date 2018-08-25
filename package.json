@@ -1,0 +1,7 @@
+{
+  "name": "circular-dependency",
+  "version": "",
+  "devDependencies": {
+    "webpack": "^4.17.1"
+  }
+}
